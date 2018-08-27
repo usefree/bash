@@ -1,4 +1,6 @@
 #!/bin/bash
+# nagios check if ip changed uder URL
+
 if [ "$1" == "" ] || [ "$2" == "" ]
 then
         echo "usage: Check_ip_url.sh url ip"

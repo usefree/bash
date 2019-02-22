@@ -1,0 +1,23 @@
+#~/.bash_profile
+
+export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
+export CLICOLOR=1
+export LSCOLORS=ExFxBxDxCxegedabagacad
+
+# For long history file
+export HISTFILESIZE=1000000
+export HISTSIZE=1000000
+export SHELL_SESSION_HISTORY=0
+
+# Avoid duplicates
+export HISTCONTROL=ignoredups:erasedups
+
+# When the shell exits, append to the history file instead of overwriting it
+shopt -s histappend
+
+# After each command, append to the history file and reread it
+export PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; history -c; history -r"
+
+# Different aliases 
+alias u1='ssh -p 2222 usefree@127.0.0.1'
+alias profile='cat ~/.bash_profile'

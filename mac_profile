@@ -22,3 +22,10 @@ export PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; histor
 # Different aliases 
 alias u1='ssh -p 2222 usefree@127.0.0.1'
 alias profile='cat ~/.bash_profile'
+
+# k8s
+alias k='kubectl'
+alias k-ccc='kubectl config current-context'
+alias k-cuc='kubectl config use-context'
+alias k-gaa='kubectl get all --all-namespaces'
+

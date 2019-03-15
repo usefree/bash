@@ -5,7 +5,7 @@
 datenow=$(date +'%d-%m-%Y')
 pathToSave="/home/usefree/K8s-Backup-$datenow"
 
-for namespace in tt-dev default
+for namespace in dev default
 do
     for resource in pods statefulset service deployment secrets prometheusrules clusterroles rolebinding
     do
